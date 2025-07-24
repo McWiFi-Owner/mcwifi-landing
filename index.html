@@ -1,5 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>McWiFi | Bridging the Digital Divide</title>
+    <meta name="description" content="Free high-speed internet for everyone—urban to rural, everywhere in between." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/favicon.svg" />
+    <style>
+      html,body{margin:0;padding:0}
+    </style>
+  </head>
+  <body class="bg-white text-gray-900 overflow-x-hidden">
+    <!-- Header -->
+    <header class="flex items-center px-6 py-4 max-w-7xl mx-auto">
+      <h1 class="text-3xl font-bold tracking-tight">McWiFi</h1>
+    </header>
+
+    <!-- Hero -->
+    <main class="flex flex-col items-center text-center px-6">
+      <section class="pt-20 pb-24 max-w-3xl">
+        <h2 class="text-5xl sm:text-6xl font-extrabold mb-6 leading-tight">
+          Connectivity&nbsp;Anywhere
+        </h2>
+        <p class="text-lg sm:text-xl mb-8">
+          McWiFi brings connectivity to all—from bustling cities to open plains—bridging the digital divide with <span class="font-semibold">free high-speed internet</span> for anyone in need, no matter where you are.
+        </p>
+        <p class="text-lg sm:text-xl mb-10">
+          Interested? Sign up to be notified when McWiFi becomes available in your area, or request a location near your community.
+        </p>
+        <a href="#subscribe" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-3 px-8 rounded-full text-lg font-semibold shadow-lg transition">
+          Get&nbsp;Notified
+        </a>
+      </section>
+
+      <!-- Signup form -->
+      <section id="subscribe" class="w-full max-w-lg mt-8">
+        <!-- Replace data-netlify with your preferred form handler -->
+        <form class="bg-gray-50 p-6 rounded-2xl shadow-lg flex flex-col gap-4" name="mcwifi-signup" method="POST" data-netlify="true">
+          <h3 class="text-2xl font-semibold">Stay in the Loop</h3>
+          <input type="email" name="email" required placeholder="you@example.com" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none" />
+          <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium py-3 rounded-lg">
+            Subscribe
+          </button>
+          <p class="text-xs text-gray-500">We’ll only reach out with major updates—your info is protected, always.</p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-24 mb-8 text-xs text-gray-500 text-center">
+      © 2025 McWiFi. All rights reserved.
+    </footer>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
