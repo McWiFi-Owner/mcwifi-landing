@@ -60,5 +60,18 @@
     <footer class="mt-24 mb-8 text-xs text-gray-500 text-center">
       © 2025 McWiFi. All rights reserved.
     </footer>
-  </body>
+  <script>
+const form = document.querySelector('form[name="mcwifi-signup"]');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const res  = await fetch(form.action, { method:'POST', body:new FormData(form) });
+  const json = await res.json();
+  if (json.ok) {
+    form.innerHTML = "<p class='text-lg font-semibold text-center'>Thanks! You're on the list. 📶</p>";
+  } else {
+    form.insertAdjacentHTML('beforeend', "<p class='text-sm text-red-600 mt-2'>Oops—please try again.</p>");
+  }
+});
+</script>
+ </body>
 </html>
